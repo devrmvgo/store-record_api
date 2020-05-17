@@ -29,8 +29,10 @@ export default class AbstractRepository {
   }
 
   async destroy(id) {
-    const model = await this._model.findOrFail(id)
+    const model = await this._model.findOrFail(id);
 
-    await model.delete()
+    await model.delete();
+
+    return "successfully deleted";
   }
 }

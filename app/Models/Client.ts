@@ -12,7 +12,7 @@ export default class Client extends BaseModel {
   public name: string
 
   @column()
-  public phone_number: string
+  public phoneNumber: string
 
   @column.dateTime({ autoCreate: true })
   public createdAt: DateTime
