@@ -25,9 +25,9 @@ import Route from '@ioc:Adonis/Core/Route'
 // })
 
 Route
-  .resource('clients', 'ClientsController')
+  .resource('clients', 'Clients/ClientsController')
   .apiOnly(); 
 
-  // Route
-  // .resource('products', 'ProductsController')
-  // .apiOnly(); 
+  Route
+  .resource('products', 'Products/ProductsController')
+  .apiOnly(); 

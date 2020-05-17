@@ -1,5 +1,5 @@
 import { HttpContextContract } from '@ioc:Adonis/Core/HttpContext'
-import ClientsService from '../../Services/Clients/ClientsService';
+import ClientsService from '../../../Services/Clients/ClientsService';
 
 export default class ClientsController {
 
