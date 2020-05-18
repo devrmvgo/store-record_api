@@ -3,8 +3,8 @@ import Product from '../../Models/Product/Product';
 
 export default class ProductsRepository extends AbstractRepository {
 
-  constructor(){
-    super(Product)
+  constructor() {
+    super(Product);
   }
 
 }

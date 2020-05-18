@@ -3,8 +3,8 @@ import AbstractService from '../AbstractService';
 
 export default class ProductsService extends AbstractService {
 
-  constructor(){
-    super(new ProductsRepository())
+  constructor() {
+    super(new ProductsRepository());
   }
 
 }
