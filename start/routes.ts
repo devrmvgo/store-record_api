@@ -26,8 +26,24 @@ import Route from '@ioc:Adonis/Core/Route'
 
 Route
   .resource('clients', 'Clients/ClientsController')
-  .apiOnly(); 
+  .apiOnly();
 
-  Route
+Route
   .resource('products', 'Products/ProductsController')
+  .apiOnly();
+
+Route
+  .resource('purchases', 'Purchases/PurchasesController')
+  .apiOnly();
+
+Route
+  .resource('itemsPurchases', 'ItemsPurchases/ItemsPurchasesController')
+  .apiOnly();
+
+Route
+  .get('/itemsPurchasesByPurchase/:id', 'ItemsPurchases/ItemsPurchasesController.getItemsByPurchase')
+
+
+Route
+  .resource('payments', 'Payments/PaymentsController')
   .apiOnly(); 
